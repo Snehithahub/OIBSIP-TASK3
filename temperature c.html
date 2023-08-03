@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(wall.webp);
+            border-image: url(cse1.jpg) 30% round;
+            border-image-width: 15px;
+        }
+        #demo3{
+            padding: 2%;
+            margin: 2%;    
+            box-shadow: 5px 10px #888888;
+        }
+       #demo4{
+        padding:2%;
+        padding-left: 3;
+        margin:1%;
+        box-shadow: 5px 10px #888888;
+       }
+     
+    </style>
+</head>
+<body>
+    <pre>
+
+    </pre>
+    <h1 style="margin: 8%;"><b>TEMPERATURE CONVERTER</b></h1>
+    <div id="demo5">
+        
+    <p>
+        <h2>click on either if the buttons to get your conversion result</h2>
+    </p>
+    <button onclick="celcius()" id="demo3">into fahrenheit</button>
+    <p>
+        <button onclick="fahrenheit()" id="demo4">  into celcius</button>
+    </p>
+    <p><h2>RESULT</h2></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function fahrenheit(){
+          let person = prompt("Please enter number", "32");
+            document.getElementById("demo").innerHTML = person+" &deg F = " + ((person -32)*5)/9+ "&deg C";
+        }
+        function celcius(){
+            let celcius=prompt("please enter number","0");
+            document.getElementById("demo1").innerHTML=celcius+"&deg C = "+(((celcius*9)/5)+32)+"&deg F"
+        }
+        </script>
+        <pre>
+
+        </pre>
+    </div>
+</body>
+</html>
